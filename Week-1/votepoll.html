@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollDetail</title>
+    
+    <style>
+        .container {
+            border: 1px solid;
+            display: grid;
+            height: 600px; /* Increase the height to accommodate the pie chart */
+        }
+        .title{
+            border:  1px solid;
+            padding: 50px;
+            background-color: whitesmoke;
+            width: 85%;
+            height: 140px;
+            font-size: 20px;
+            padding-bottom: 0px;
+        }
+        .container2{
+            margin-left: 4px;
+            width: 60%;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 8px;
+            text-align: left;
+            width:25%;
+        }
+
+        th {
+            padding: 8px;
+            text-align: left;
+            background-color: gray;
+        }
+        th{
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Vote on this Poll</h1>
+    </div>
+    <div class="container" style="font-family:Arial, Helvetica, sans-serif">
+        <div class="title">
+            <h1>FlyWeight Polls</h1>
+        </div>
+        <div style="display: flex;">
+        <div class="container2" style="padding-left: 4%; padding-bottom: 10%; font-size: 20px;">
+            <form>
+                <h2>Will India win the ICC World Cup next time?</h2>
+                <div>
+                  <input type="radio" id="yes" name="prediction" value="yes">
+                  <label style="font-size: 32px;" for="yes">Yes</label><br>
+                  <input type="radio" id="no" name="prediction" value="no">
+                  <label style="font-size: 32px;" for="no">No</label><br><br>
+                  <button style="font-size: 20px;">Vote</button>
+                </div>
+              </form>
+        </div>
+    
+</body>
+</html>

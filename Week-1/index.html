@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0% 7%;
+        }
+        .container {
+            border: 1px solid;
+            display:grid;
+            height: 500px
+
+        }
+        
+        .title {
+            
+            border:  1px solid;
+            padding: 50px;
+            background-color: whitesmoke;
+            width: 85%;
+            height: 140px;
+            font-size: 30px;
+            padding-bottom: 0px;
+        }
+
+        .container2{
+            margin-left: 4px;
+        }
+
+        .questionBox {
+            border-bottom: 1px solid blue;
+        }
+        .column { 
+            float:left
+        } */
+        .column.side{
+            width: 40%;
+        }
+        .column.main{
+    
+            width:60%
+    
+        }
+        .side{
+            margin: 0 20px;
+        }
+        .pollFilter {
+            margin-top: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            height: 200px;
+        }
+        table, th, td{
+            border: 1px solid black;
+
+            border-collapse: collapse
+
+        }
+        td{
+            height: 80px;
+        }
+        thead{
+            background-color: lightgray;
+        }
+
+        .createPollButton > button{
+
+            background-color: hsl(202, 90%, 49%);
+            color: white;
+            border-radius: 5px;
+            height: 35px;
+            width: 200px;
+
+        }
+        .pollFilter{
+            background-color: whitesmoke;
+        }
+        .pollFilter > button{
+            margin-top: 5px;
+        }
+        .checkbox{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1> HOME</h1>
+    </div>
+    <div class="container">
+        <div class="title" style="background-color: dimgray;">
+            <b>FlyWeight Polls</b>
+        </div>
+
+        <div class="container2">
+            <div class="column side">
+                <div class="createPollButton">
+                    <button>Create Poll</button>
+                </div>
+                <div class="pollFilter">
+        
+        
+                    <div class="checkbox">
+                        <input type="checkbox" name="tags" id="sports" value="sports">
+                        <label for="sports">Sports</label>
+                    </div>
+                
+                    <div class="checkbox">
+                        <input type="checkbox" name="tags" id="Games" value="Games">
+                    <label for="Games">Games</label>
+                    </div>
+                    
+                    <div class="checkbox">
+                        <input type="checkbox" name="tags" id="Health" value="Health">
+                        <label for="Health">Health</label>
+                   
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="tags" id="Politics" value="Politics">
+                        <label for="Politics">Politics</label>
+                    </div>
+                    <button>Filter by tags</button>
+                </div>
+            </div>
+    
+            <div class="column main">
+                <div class="tableOfPolls">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th>Poll Question</th>
+                                <th>Total Votes</th>
+                                <th>Tags</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width:5%">1</td>
+                                <td style="width: 25%" ><div class="questionBox">Will India win the ICC World cup next time?</div></td>
+                                <td style="width: 15%">22</td>
+                                <td style="width: 25%">Sports, Games</td>
+                            </tr>
+                            <tr>
+                               <td>2</td>
+                                <td style="width: 25%">
+                                   <div class="questionBox">
+                                    What will be the total corona casualties by the next year globally?
+                                   </div>
+                                </td>
+                                <td>10</td>
+                                <td>Health, Politics</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

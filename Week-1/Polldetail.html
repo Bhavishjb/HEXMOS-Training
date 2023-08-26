@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollDetail</title>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <style>
+        .container {
+            border: 1px solid;
+            display: grid;
+            height: 600px; /* Increase the height to accommodate the pie chart */
+            
+        }
+        .title{
+            border:  1px solid;
+            padding: 50px;
+            background-color: whitesmoke;
+            width: 85%;
+            height: 140px;
+            font-size: 20px;
+            padding-bottom: 0px;
+        }
+        .container2{
+            margin-left: 4px;
+            width: 60%;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 8px;
+            text-align: left;
+            width:25%;
+        }
+
+        th {
+            padding: 8px;
+            text-align: left;
+            background-color: gray;
+        }
+        th{
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>PollDetail</h1>
+    </div>
+    <div class="container">
+        <div class="title">
+            <h1>FlyWeight Polls</h1>
+        </div>
+        <div style="display: flex;">
+        <div class="container2">
+            <h1>will India win the ICC World Cup next time?</h1>
+            <button>Vote on this Poll</button><br><br>
+            
+                <table>
+                    <tr>
+                        <th>Number</th>
+                        <th>Option</th>
+                        <th>Votes</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 2%;">1</td>
+                        <td style="width: 25%; height:10px">Yes,India will win the next ICC<br> World cup</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 2%;">2</td>
+                        <td style="width: 25%; height: 10px;">No,India won't win the next<br> ICC World cup</td>
+                        <td>10</td>
+                    </tr>
+                </table><br><br>
+                <div class="tags">Tags:Sports,Games</div>
+        </div>
+                <div>
+                    <canvas id="myChart" class="piechart" style="width:300%;max-width:700px"></canvas>
+                    <script>
+                        var xValues = ["Yes","No"];
+                        var yValues = [12,10];
+                        var barColors = [
+                        "#ADD8E6",
+                        "#ADD8E6"
+                        ];
+                        
+                        new Chart("myChart", {
+                        type: "pie",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                            backgroundColor: barColors,
+                            data: yValues
+                            }]
+                        },
+                        options: {
+                            title: {
+                            display: false,
+                            text: ""
+                            }
+                        }
+                        });
+                        </script>
+                        <b style="padding-left: 40%;">Total Votes: 22</b>
+                </div>
+        </div>
+                
+    </div>
+    
+</body>
+</html>

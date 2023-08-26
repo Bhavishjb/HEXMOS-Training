@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatePoll</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0% 7%;
+            
+        }
+        .container {
+
+            border: 1px solid black;
+
+            height: 900px;
+        }
+        .title {
+            border: 1px solid black;
+            height: 15%;
+            width: 80%;
+            padding: 25px;
+            font-size: 24px;
+            background-color: whitesmoke;
+        }
+      
+        .container2{
+            margin: 20px
+        }
+        .question{
+            font-size: 30px;
+            
+
+        }
+        
+        .f1{
+            background-color: lightgrey;
+            height: 620px;
+        }
+        .f12{
+            margin-left: 20px;
+        }
+        input{
+            margin: 10px 0px;
+            width: 60%;
+            height: 50px;
+        }
+        button{
+            height: 30px;
+        }
+        .form{
+            width: 60%;
+        }
+
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <div class="header">
+        <h1>CreatePoll</h1>
+    </div>
+    <div class="container">
+
+        <div class="title">
+            <h1>FlyWeight Polls</h1>
+        </div>
+
+        <div class="container2 column">
+
+
+
+          
+            
+            <div class="form">
+                <form action="create.php" method="post">
+
+                    <div class="f1">
+                        <div class="f12">
+                            <h2>Question</h2>
+
+                        <input type="text" placeholder="Type your question here">
+
+                        <h2>Answer Options</h2>
+                        <input type="text" placeholder="Option 1">
+                        <input type="text" placeholder="Option 1">
+                        <br>
+                        <button style="margin: 20px 0px;">Add Option</button>
+                        
+                        <h2>Comma Seperated Tags</h2>
+
+                        <input type="text" placeholder="Tag1, Tag2, Tag3">
+                        </div>
+                       
+                    </div>
+                    <div style="margin: 20px 0px;"> <button style="width: 150px;">Create Poll</button></div>
+                    
+                </form>
+            </div>
+        </div>
+
+        
+
+
+    
+</body>
+</html>
