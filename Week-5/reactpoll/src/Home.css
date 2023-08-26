@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0% 7%;
+}
+.container {
+    border: 1px solid;
+    display:grid;
+    height: 500px
+
+}
+
+.title{
+    border:  1px solid;
+    padding: 50px;
+    background-color: whitesmoke;
+    width: 85%;
+    height: 140px;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+
+.container2{
+    margin-left: 4px;
+}
+
+.questionBox {
+    border-bottom: 1px solid blue;
+}
+.column { 
+    float:left
+} */
+.column.side{
+    width: 40%;
+}
+.column.main{
+
+    width:60%
+
+}
+.side{
+    margin: 0 20px;
+}
+.pollFilter {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 16px;
+    height: 10px;
+}
+table, th, td{
+    border: 1px solid black;
+
+    border-collapse: collapse
+
+}
+td{
+    height: 80px;
+}
+thead{
+    background-color: lightgray;
+}
+
+.createPollButton > button{
+
+    background-color: hsl(202, 90%, 49%);
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
+
+}
+.pollFilter{
+    margin-top: 20px;
+    border:1px solid black;
+    padding: 1px;
+    height:30%;
+    width:100%;
+    background-color: whitesmoke;
+}
+.filtertagsbtn{
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+.pollFilter > div > button{
+    margin-top: 10px;
+    padding-left: 5%;
+}
+
+.checkbox{
+    margin: 10px;
+    font-size: 15px;
+    
+}
+.smallCheckbox {
+    transform: scale(0.3);
+    
+  }
+  
