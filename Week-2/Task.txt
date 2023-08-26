@@ -1,0 +1,102 @@
+The goal for the assignment is to answer the
+below questions using the "polldata.fps" data attached in the
+assignment. You can open the attached file in any text editor such as
+PyCharm.
+
+Q1) Write a function load_fps(filepath) that reads the
+attached file & then turns it into a structure of following sort
+(list of dictionaries):
+[
+{
+“Question”: “What’s the most liked shoe brand according to you?”,
+“OptionVote”: {
+“Option1”: Vote1,
+“Option2”: Vote2,
+…
+“OptionN”: VoteN
+},
+“Tags”: [tag1, tag2, … tagN]
+},
+{
+“Question”: “What’s the most liked shoe brand according to you?”,
+“OptionVote”: {
+“Option1”: Vote1,
+“Option2”: Vote2,
+…
+“OptionN”: VoteN
+},
+“Tags”: [tag1, tag2, … tagN]
+},
+{
+….
+}
+...
+}
+]
+
+Q2) Suppose you’ve done the following:
+
+polls_data = load_fps(filepath)
+
+Now, write the function filter_by_tags(polls_data, list_of_tags)
+
+Example:
+
+Calling the following function (input):
+
+filter_by_tags(polls_data, ["phone", "cricket"])
+
+Should return as output:
+
+List of dictionaries that have as tag either "phone" or "cricket"
+
+This
+function should return a filtered list of dictionaries (a subset of the
+original polls_data that matches ANY of the given list of tags)
+
+
+Q3) A view function for viewing the stats of a particular poll. It will take polls data from the file.
+
+polls_data = load_fps(filepath)
+
+view_poll(polls_data, pollNumber)
+
+And output will be in this structure:
+
+What’s the most liked shoe brand according to you?
+* Puma 1
+* Adidas 2
+* Sparx 3
+* Reebok 4
+
+Tags: tag1, tag2, … tagN
+
+Q4) A vote function which takes the pollNumber and OptionName and updates the poll_data dictionary
+
+polls_data = load_fps(filepath)
+
+polls_data = update_poll(polls_data, pollNumber, optionName)
+
+If there is pollNumber which is given and if there is optionName which is given,
+then update the optionName's vote by 1(increment 1).
+Example: 
+initial data - [{question: ..., optionVote: {puma: 5, ...}, tags: [...]}, ...]
+after- update_poll(polls_data,1,”puma”)
+output data- [{question: ..., optionVote: {puma: 6, ...}, tags: [...]}, ...]
+
+Q5) A save function to save the state of polls_data back to the file format:
+
+polls_data = load_fps(filepath)
+
+...Operations...
+
+save_poll(polls_data, filepath)
+
+The polls_data should be written back to updated_polldata.fps file.
+The fps file indicates the database.
+
+
+
+Polls data file
+
+https://drive.google.com/file/d/1laW1mTTyWSZxaWy2hnBU8IlWJ5ZeNY8I/view

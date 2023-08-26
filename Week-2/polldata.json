@@ -1,0 +1,75 @@
+[
+    {
+        "Question": "Is IPhone12 worth buying?",
+        "OptionVote": {
+            "Yes": 0,
+            "No": 200
+        },
+        "Tags": [
+            "phones",
+            "apple"
+        ]
+    },
+    {
+        "Question": "Will India win the next world up?",
+        "OptionVote": {
+            "Yes": 5,
+            "No": 0
+        },
+        "Tags": [
+            "cricket",
+            "India"
+        ]
+    },
+    {
+        "Question": "Which is your favourite programming language ?",
+        "OptionVote": {
+            "Python": 1,
+            "Java": 0,
+            "C": 0,
+            "C++": 0
+        },
+        "Tags": [
+            "Programming"
+        ]
+    },
+    {
+        "Question": "What\u00e2\u20ac\u2122s the most liked shoe brand according to you?",
+        "OptionVote": {
+            "puma": 2,
+            "adidas": 2,
+            "sparx": 3,
+            "reebok": 4
+        },
+        "Tags": [
+            "shoes",
+            "brands"
+        ]
+    },
+    {
+        "Question": "When will the vaccine for covid get distributed in india?",
+        "OptionVote": {
+            "by February 2021": 10,
+            "by June 2021": 20,
+            "It will take another year": 1,
+            "It will never happen": 0
+        },
+        "Tags": [
+            "health",
+            "covid"
+        ]
+    },
+    {
+        "Question": "Which is the most loved tourist place in Kasaragod district",
+        "OptionVote": {
+            "Bekal Fort": 6,
+            "Ranipuram": 1,
+            "Ananthapura lake temple": 1,
+            "Kottancheri Hills": 2
+        },
+        "Tags": [
+            "tourist place",
+            "location"
+        ]
+    }
+]
